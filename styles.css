@@ -51,7 +51,7 @@ body {
 /* ================= FIX NAV FIJO ================= */
 
 .page {
-  padding-top: 100px;
+  padding-top: 110px;
 }
 
 /* ================= HERO ================= */
@@ -88,12 +88,12 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ================= LOGO RESPONSIVO (CORREGIDO) ================= */
+/* ================= LOGO ================= */
 
 .hero-logo {
-  width: clamp(180px, 18vw, 340px);
+  width: clamp(200px, 20vw, 360px);
   margin-bottom: 15px;
-  filter: drop-shadow(0 0 20px rgba(45,125,255,0.6));
+  filter: drop-shadow(0 0 25px rgba(45,125,255,0.7));
 }
 
 /* ================= TEXTO HERO ================= */
@@ -136,19 +136,32 @@ body {
   text-decoration: none;
 }
 
-/* ================= SECCIONES ================= */
+/* ================= SECCIONES (MEJORADAS) ================= */
 
 .section {
-  padding: 70px 20px;
+  padding: 80px 20px;
   text-align: center;
   max-width: 900px;
   margin: auto;
 }
 
-.section h2,
-.section h1 {
+/* TÍTULOS MÁS FUERTES */
+.section h1,
+.section h2 {
   color: #2d7dff;
   margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* ================= BLOQUES DE TEXTO (AQUÍ ESTÁ LA MEJORA REAL) ================= */
+
+.section p {
+  background: linear-gradient(145deg, #0b1222, #0e1a33);
+  padding: 22px;
+  border-radius: 14px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  box-shadow: 0 0 20px rgba(45,125,255,0.08);
 }
 
 /* ================= PLANES ================= */
@@ -194,7 +207,7 @@ body {
   border: 2px solid #2d7dff;
 }
 
-/* ================= MAPA ================= */
+/* ================= MAPA (MEJORADO VISUAL) ================= */
 
 .map-container {
   width: 100%;
@@ -204,9 +217,10 @@ body {
 
 .map-container iframe {
   width: 100%;
-  height: 400px;
-  border-radius: 12px;
+  height: 420px;
+  border-radius: 14px;
   border: none;
+  box-shadow: 0 0 30px rgba(45,125,255,0.15);
 }
 
 /* ================= FOOTER ================= */
