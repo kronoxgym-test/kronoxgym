@@ -89,7 +89,7 @@ body {
 }
 
 .hero-logo {
-  width: clamp(180px, 18vw, 340px);
+  width: 140px;
   margin-bottom: 15px;
   filter: drop-shadow(0 0 20px rgba(45,125,255,0.6));
 }
@@ -153,15 +153,15 @@ body {
   line-height: 1.6;
 }
 
-/* ================= INFO HERO ================= */
+/* ================= INFO HERO (CORREGIDO) ================= */
 
 .info-hero {
   padding-top: 40px;
 }
 
+/* 🔥 AQUÍ ESTÁ EL CAMBIO REAL */
 .info-logo {
-  width: 120px;
-  max-width: 40vw;
+  width: clamp(220px, 30vw, 320px);
   margin-bottom: 10px;
   filter: drop-shadow(0 0 20px rgba(45,125,255,0.6));
 }
