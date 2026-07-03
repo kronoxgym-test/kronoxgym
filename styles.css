@@ -1,184 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background: #070b14;
-  color: white;
-}
-
-/* ================= NAV ================= */
-
-.nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 40px;
-  background: rgba(0,0,0,0.65);
-  backdrop-filter: blur(14px);
-  z-index: 1000;
-  border-bottom: 1px solid rgba(45,125,255,0.2);
-}
-
-.logo img {
-  height: 48px;
-  filter: drop-shadow(0 0 12px rgba(45,125,255,0.5));
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  transition: 0.3s;
-}
-
-.nav a:hover {
-  color: #2d7dff;
-}
-
-.cta-nav {
-  color: #2d7dff;
-  font-weight: 600;
-}
-
-/* ================= FIX NAV FIJO ================= */
-
-.page {
-  padding-top: 110px;
-}
-
-/* ================= HERO ================= */
-
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  background: url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80");
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(7,11,20,0.95));
-  pointer-events: none;
-}
-
-.hero-content {
-  position: relative;
-  max-width: 800px;
-  padding: 20px;
-  animation: fadeUp 1.2s ease;
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ================= LOGO ================= */
-
-.hero-logo {
-  width: clamp(200px, 20vw, 360px);
-  margin-bottom: 15px;
-  filter: drop-shadow(0 0 25px rgba(45,125,255,0.7));
-}
-
-/* ================= TEXTO HERO ================= */
-
-.hero h1 {
-  font-size: 3.5rem;
-  color: #2d7dff;
-  font-weight: 800;
-}
-
-.hero p {
-  margin-top: 15px;
-  color: #cbd5e1;
-}
-
-/* ================= BOTONES ================= */
-
-.btn-primary {
-  background: #2d7dff;
-  padding: 12px 22px;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px;
-  box-shadow: 0 0 25px rgba(45,125,255,0.3);
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 35px rgba(45,125,255,0.6);
-}
-
-.btn-secondary {
-  border: 1px solid #2d7dff;
-  padding: 12px 22px;
-  border-radius: 10px;
-  color: #2d7dff;
-  text-decoration: none;
-}
-
-/* ================= SECCIONES (MEJORADAS) ================= */
-
-.section {
-  padding: 80px 20px;
-  text-align: center;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* TÍTULOS MÁS FUERTES */
-.section h1,
-.section h2 {
-  color: #2d7dff;
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-/* ================= BLOQUES DE TEXTO (AQUÍ ESTÁ LA MEJORA REAL) ================= */
-
-.section p {
-  background: linear-gradient(145deg, #0b1222, #0e1a33);
-  padding: 22px;
-  border-radius: 14px;
-  color: #cbd5e1;
-  line-height: 1.6;
-  box-shadow: 0 0 20px rgba(45,125,255,0.08);
-}
-
 /* ================= PLANES ================= */
 
 .plans {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 25px;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
 
+/* tarjetas más consistentes */
 .plan-card {
   background: linear-gradient(145deg, #0b1222, #0e1a33);
   padding: 35px;
   border-radius: 16px;
   width: 300px;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .plan-card:hover {
@@ -186,48 +25,21 @@ body {
   border: 1px solid #2d7dff;
 }
 
-.plan-card h3 {
-  font-size: 2rem;
-  color: #2d7dff;
-  margin: 10px 0;
-}
-
-.plan-card ul {
-  list-style: none;
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
-
-.plan-card ul li {
-  margin: 8px 0;
-  color: #cbd5e1;
-}
-
+/* highlight más limpio */
 .highlight {
   border: 2px solid #2d7dff;
+  box-shadow: 0 0 25px rgba(45,125,255,0.15);
 }
 
-/* ================= MAPA (MEJORADO VISUAL) ================= */
+/* ================= RESPONSIVE ================= */
 
-.map-container {
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-}
+@media (max-width: 950px) {
+  .plans {
+    flex-wrap: wrap;
+  }
 
-.map-container iframe {
-  width: 100%;
-  height: 420px;
-  border-radius: 14px;
-  border: none;
-  box-shadow: 0 0 30px rgba(45,125,255,0.15);
-}
-
-/* ================= FOOTER ================= */
-
-footer {
-  padding: 25px;
-  text-align: center;
-  background: #05070f;
-  color: #666;
+  .plan-card {
+    width: 100%;
+    max-width: 320px;
+  }
 }
