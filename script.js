@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kronox Gym</title>
-    
-    <!-- Tus estilos CSS -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Tu JavaScript con 'defer' para que cargue en el momento correcto -->
-    <script src="script.js" defer></script>
-</head>
-<body>
+const phone = "527779393985";
 
-    <!-- Aquí va todo el resto del contenido de tu página (Hero, Planes, Footer, etc.) -->
+function wa(msg) {
+  return `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+}
 
-</body>
-</html>
+document.getElementById("waHero").href =
+  wa("Hola, quiero información de Kronox Gym");
+
+document.getElementById("waMensual").href =
+  wa("Hola, me interesa la mensualidad de Kronox Gym ($350)");
+
+document.getElementById("waAnual").href =
+  wa("Hola, me interesa la anualidad de Kronox Gym ($3000)");
+
+document.getElementById("waFooter").href =
+  wa("Hola, quiero información general de Kronox Gym");
+
+document.getElementById("waNav").href =
+  wa("Hola, quiero información de Kronox Gym");
