@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #0b0f1a;
+  color: white;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  color: #2d7dff;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.btn-nav {
+  color: #2d7dff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle, #122042, #0b0f1a);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #2d7dff;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+/* BOTONES */
+.btn-primary {
+  background: #2d7dff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.btn-secondary {
+  border: 1px solid #2d7dff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #2d7dff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* SECCIONES */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #2d7dff;
+  margin-bottom: 40px;
+}
+
+/* BENEFICIOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #121a2b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* PLANES */
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #121a2b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 280px;
+}
+
+.highlight {
+  border: 2px solid #2d7dff;
+}
+
+.price {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #2d7dff;
+}
+
+/* UBICACIÓN */
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+iframe {
+  width: 300px;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+}
+
+.info {
+  text-align: left;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #0a0d16;
+  color: #666;
+}
