@@ -4,100 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kronox Gym</title>
+
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="logo">Kronox Gym</div>
+<!-- NAV -->
+<header class="nav">
+  <div class="logo">
+    <img src="https://res.cloudinary.com/bo5jzelh/image/upload/v1783041430/Logo_Kronox_Gym_lfg9tl.jpg" alt="Kronox Gym">
+  </div>
+
+  <nav>
     <a href="#planes">Planes</a>
     <a href="#ubicacion">Ubicación</a>
-    <a class="btn-nav" href="#contacto">Contacto</a>
-  </header>
+    <a class="cta-nav" id="waNav">WhatsApp</a>
+  </nav>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>TRANSFORMA TU CUERPO</h1>
-      <p>Entrena fuerte. Evoluciona. Supera tus límites en Kronox Gym.</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
 
-      <div class="hero-buttons">
-        <a href="#planes" class="btn-primary">Ver planes</a>
-        <a id="waHero" class="btn-secondary">Quiero información</a>
-      </div>
+  <div class="hero-content">
+    
+    <img class="hero-logo" src="https://res.cloudinary.com/bo5jzelh/image/upload/v1783041430/Logo_Kronox_Gym_lfg9tl.jpg" alt="Kronox Gym">
+
+    <h1>TRANSFORMA TU CUERPO</h1>
+    <h2>BUILD YOUR POWER</h2>
+
+    <p>
+      Entrena con disciplina, energía y un entorno diseñado para tu máximo rendimiento físico.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="btn-primary" id="waHero">Quiero información</a>
+      <a href="#planes" class="btn-secondary">Ver planes</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- BENEFICIOS -->
-  <section class="section">
-    <h2>¿Por qué Kronox Gym?</h2>
+<!-- BENEFICIOS -->
+<section class="section">
+  <h2>Entrenamiento de alto nivel</h2>
 
-    <div class="grid">
-      <div class="card">🏋️ Equipo completo</div>
-      <div class="card">💪 Entrenamiento libre</div>
-      <div class="card">⚡ Ambiente motivador</div>
-      <div class="card">📈 Mejora constante</div>
+  <div class="grid">
+    <div class="card">🏋️ Equipo profesional</div>
+    <div class="card">⚡ Ambiente motivador</div>
+    <div class="card">💪 Entrenamiento libre</div>
+    <div class="card">📈 Progreso constante</div>
+  </div>
+</section>
+
+<!-- PLANES -->
+<section class="section" id="planes">
+  <h2>Planes</h2>
+
+  <div class="plans">
+
+    <div class="plan">
+      <h3>Mensualidad</h3>
+      <div class="price">$350</div>
+      <p class="desc">Acceso completo al gimnasio</p>
+      <a class="btn-primary" id="waMensual">Elegir plan</a>
     </div>
-  </section>
 
-  <!-- PLANES -->
-  <section class="section" id="planes">
-    <h2>Planes</h2>
-
-    <div class="plans">
-
-      <div class="plan">
-        <h3>Mensualidad</h3>
-        <div class="price">$350 MXN</div>
-        <ul>
-          <li>Acceso completo al gimnasio</li>
-          <li>Uso libre de equipo</li>
-          <li>Entrenamiento autónomo</li>
-        </ul>
-        <a class="btn-primary plan-btn" id="waMensual">Elegir plan</a>
-      </div>
-
-      <div class="plan highlight">
-        <h3>Anualidad</h3>
-        <div class="price">$3000 MXN</div>
-        <ul>
-          <li>Acceso todo el año</li>
-          <li>Mejor costo mensual</li>
-          <li>Acceso completo</li>
-        </ul>
-        <a class="btn-primary plan-btn" id="waAnual">Elegir plan</a>
-      </div>
-
+    <div class="plan highlight">
+      <h3>Anualidad</h3>
+      <div class="price">$3000</div>
+      <p class="desc">Mejor costo anual</p>
+      <a class="btn-primary" id="waAnual">Elegir plan</a>
     </div>
-  </section>
 
-  <!-- UBICACIÓN -->
-  <section class="section" id="ubicacion">
-    <h2>Ubicación</h2>
+  </div>
+</section>
 
-    <div class="location">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..." 
-        loading="lazy">
-      </iframe>
+<!-- UBICACIÓN -->
+<section class="section" id="ubicacion">
+  <h2>Ubicación</h2>
 
-      <div class="info">
-        <p><strong>Horario:</strong> Lunes a Sábado</p>
-        <p><strong>Contacto:</strong> 777 939 3985</p>
-        <a class="btn-secondary" id="waFooter">Enviar WhatsApp</a>
-      </div>
+  <div class="location">
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
+      loading="lazy">
+    </iframe>
+
+    <div class="info">
+      <p><strong>Horario:</strong> Lunes a Sábado</p>
+      <p><strong>Contacto:</strong> 777 939 3985</p>
+
+      <a class="btn-secondary" id="waFooter">Contactar por WhatsApp</a>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Kronox Gym - Todos los derechos reservados</p>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<footer>
+  © 2026 Kronox Gym - Todos los derechos reservados
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
