@@ -293,3 +293,30 @@ footer {
   background: #05070f;
   color: #666;
 }
+
+.location-card {
+    background: linear-gradient(145deg, #0b1222, #0e1a33);
+    padding: 60px 20px;
+    border-radius: 18px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 25px rgba(45,125,255,0.12);
+}
+
+.location-icon {
+    width: 90px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 12px rgba(45,125,255,0.5));
+}
+
+.location-card h2 {
+    color: #2d7dff;
+    margin-bottom: 10px;
+}
+
+.location-card p {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
