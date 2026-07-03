@@ -4,17 +4,16 @@ function wa(msg) {
   return `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
 }
 
-document.getElementById("waHero").href =
-  wa("Hola, quiero información de Kronox Gym");
+function setLink(id, msg) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.href = wa(msg);
+  }
+}
 
-document.getElementById("waMensual").href =
-  wa("Hola, me interesa la mensualidad de Kronox Gym ($350)");
-
-document.getElementById("waAnual").href =
-  wa("Hola, me interesa la anualidad de Kronox Gym ($3000)");
-
-document.getElementById("waFooter").href =
-  wa("Hola, quiero información general de Kronox Gym");
-
-document.getElementById("waNav").href =
-  wa("Hola, quiero información de Kronox Gym");
+// Safe bindings
+setLink("waHero", "Hola, quiero información de Kronox Gym");
+setLink("waMensual", "Hola, me interesa la mensualidad de Kronox Gym ($350)");
+setLink("waAnual", "Hola, me interesa la anualidad de Kronox Gym ($3000)");
+setLink("waFooter", "Hola, quiero información general de Kronox Gym");
+setLink("waNav", "Hola, quiero información de Kronox Gym");
