@@ -243,26 +243,28 @@ body {
 /* ================= CATÁLOGO ================= */
 
 .gallery {
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1300px;
   margin: auto;
-  padding: 20px;
+  padding: 20px 0 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
 }
 
 .gallery img {
   width: 100%;
-  height: 260px;
+  height: 280px;
   object-fit: cover;
-  border-radius: 16px;
-  border: 2px solid rgba(45,125,255,0.25);
+  border-radius: 18px;
+  border: 2px solid rgba(45,125,255,0.20);
   box-shadow: 0 0 20px rgba(45,125,255,0.12);
-  transition: .35s;
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  cursor: pointer;
 }
 
 .gallery img:hover {
-  transform: scale(1.04);
+  transform: translateY(-6px) scale(1.03);
   border-color: #2d7dff;
   box-shadow: 0 0 35px rgba(45,125,255,0.35);
 }
@@ -272,11 +274,13 @@ body {
 @media (max-width: 768px) {
 
   .gallery {
+    width: 92%;
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .gallery img {
-    height: 230px;
+    height: 240px;
   }
 
 }
