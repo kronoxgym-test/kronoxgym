@@ -1,29 +1,80 @@
-<main class="page">
+<!DOCTYPE html>
+<html lang="es">
 
-    <section class="section">
+<head>
 
-        <div class="location-card">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <img 
-                src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
-                alt="Ubicación"
-                class="location-icon">
+    <title>Kronox Gym | Ubicación</title>
 
-            <h2>¿Dónde estamos?</h2>
+    <link rel="stylesheet" href="styles.css">
 
-            <p>
-                Kronox Gym<br>
-                Cuernavaca, Morelos, México
-            </p>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-            <a href="https://maps.google.com/?q=Kronox Gym Cuernavaca" 
-               target="_blank"
-               class="btn-primary">
-                Abrir en Google Maps
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="nav">
+
+        <a href="index.html" class="logo">
+            <img src="https://res.cloudinary.com/bo5jzelh/image/upload/v1783041430/Logo_Kronox_Gym_lfg9tl.jpg" alt="Kronox Gym">
+        </a>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="informacion.html">Información</a>
+            <a href="planes.html">Planes</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="ubicacion.html" class="active">Ubicación</a>
+
+            <a href="https://wa.me/527779393985" target="_blank" class="cta-nav">
+                WhatsApp
             </a>
 
-        </div>
+        </nav>
 
-    </section>
+    </header>
 
-</main>
+    <!-- ================= CONTENIDO ================= -->
+
+    <main class="page">
+
+        <section class="section">
+
+            <div class="location-card">
+
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
+                    alt="Ubicación"
+                    class="location-icon">
+
+                <h2>¿Dónde estamos?</h2>
+
+                <p>
+                    <strong>Kronox Gym</strong><br>
+                    Cuernavaca, Morelos, México
+                </p>
+
+                <a href="https://maps.app.goo.gl/SxraqDmqQ79wTrAb8"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn-primary">
+                    Abrir en Google Maps
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
