@@ -1,21 +1,19 @@
-const phone = "527779393985"; // México +52
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kronox Gym</title>
+    
+    <!-- Tus estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tu JavaScript con 'defer' para que cargue en el momento correcto -->
+    <script src="script.js" defer></script>
+</head>
+<body>
 
-function waLink(message) {
-  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-}
+    <!-- Aquí va todo el resto del contenido de tu página (Hero, Planes, Footer, etc.) -->
 
-// HERO
-document.getElementById("waHero").href =
-  waLink("Hola, quiero información sobre Kronox Gym");
-
-// PLAN MENSUAL
-document.getElementById("waMensual").href =
-  waLink("Hola, me interesa el plan mensual de $350 en Kronox Gym");
-
-// PLAN ANUAL
-document.getElementById("waAnual").href =
-  waLink("Hola, me interesa el plan anual de $3000 en Kronox Gym");
-
-// FOOTER
-document.getElementById("waFooter").href =
-  waLink("Hola, quiero información general de Kronox Gym");
+</body>
+</html>
