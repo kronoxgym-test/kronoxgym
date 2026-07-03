@@ -153,6 +153,29 @@ body {
   line-height: 1.6;
 }
 
+/* ================= INFO HERO (NUEVO Y CORRECTO) ================= */
+
+.info-hero {
+  padding-top: 40px;
+}
+
+.info-logo {
+  width: 140px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 20px rgba(45,125,255,0.6));
+}
+
+.info-hero h1 {
+  font-size: 2.8rem;
+  color: #2d7dff;
+  margin-bottom: 10px;
+}
+
+.info-hero p {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
 /* ================= PLANES ================= */
 
 .plans {
