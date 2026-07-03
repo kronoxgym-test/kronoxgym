@@ -1,122 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kronox Gym</title>
 
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kronox Gym | Inicio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAV -->
-<header class="nav">
-  <div class="logo">
-    <img src="https://res.cloudinary.com/bo5jzelh/image/upload/v1783041430/Logo_Kronox_Gym_lfg9tl.jpg" alt="Kronox Gym">
-  </div>
+    <!-- ================= NAVBAR ================= -->
 
-  <nav>
-    <a href="#planes">Planes</a>
-    <a href="#ubicacion">Ubicación</a>
-    <a class="cta-nav" id="waNav">WhatsApp</a>
-  </nav>
-</header>
+    <header class="nav">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-overlay"></div>
+        <a href="index.html" class="logo">
+            <img src="https://res.cloudinary.com/bo5jzelh/image/upload/v1783041430/Logo_Kronox_Gym_lfg9tl.jpg" alt="Kronox Gym">
+        </a>
 
-  <div class="hero-content">
+        <nav>
 
-    <img class="hero-logo" src="https://res.cloudinary.com/bo5jzelh/image/upload/v1783041430/Logo_Kronox_Gym_lfg9tl.jpg" alt="Kronox Gym">
+            <a href="index.html" class="active">Inicio</a>
 
-    <h1>TRANSFORMA TU CUERPO</h1>
-    <h2>BUILD YOUR POWER</h2>
+            <a href="informacion.html">Información</a>
 
-    <p>Entrena con disciplina, energía y un entorno diseñado para tu máximo rendimiento.</p>
+            <a href="planes.html">Planes</a>
 
-    <div class="hero-buttons">
-      <a class="btn-primary" id="waHero">Quiero información</a>
-      <a href="#planes" class="btn-secondary">Ver planes</a>
-    </div>
+            <a href="ubicacion.html">Ubicación</a>
 
-  </div>
-</section>
+            <a href="https://wa.me/527779393985" target="_blank" class="cta-nav">
+                WhatsApp
+            </a>
 
-<!-- BENEFICIOS -->
-<section class="section">
-  <h2>Entrenamiento de alto nivel</h2>
+        </nav>
 
-  <div class="grid">
-    <div class="card">🏋️ Equipo profesional</div>
-    <div class="card">⚡ Ambiente motivador</div>
-    <div class="card">💪 Entrenamiento libre</div>
-    <div class="card">📈 Progreso constante</div>
-  </div>
-</section>
+    </header>
 
-<!-- PLANES -->
-<section class="section" id="planes">
-  <h2>Planes</h2>
+    <!-- ================= HERO ================= -->
 
-  <div class="plans">
+    <main class="hero">
 
-    <div class="plan">
-      <h3>Mensualidad</h3>
-      <div class="price">$350</div>
-      <p class="desc">Acceso completo al gimnasio</p>
-      <a class="btn-primary" id="waMensual">Elegir plan</a>
-    </div>
+        <div class="hero-overlay"></div>
 
-    <div class="plan highlight">
-      <h3>Anualidad</h3>
-      <div class="price">$3000</div>
-      <p class="desc">Mejor costo anual</p>
-      <a class="btn-primary" id="waAnual">Elegir plan</a>
-    </div>
+        <div class="hero-content">
 
-  </div>
-</section>
+            <img
+                class="hero-logo"
+                src="https://res.cloudinary.com/bo5jzelh/image/upload/v1783041430/Logo_Kronox_Gym_lfg9tl.jpg"
+                alt="Kronox Gym">
 
-<!-- UBICACIÓN -->
-<section class="section" id="ubicacion">
-  <h2>Ubicación</h2>
+            <h1>TRANSFORMA TU CUERPO</h1>
 
-  <div class="location">
+            <p>
 
-    <!-- MAPA REAL CORRECTO -->
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2smx!4v1783042783029!5m2!1ses-419!2smx!6m8!1m7!1s5rSih2rtpthXl4GGVKes1A!2m2!1d18.91239380985268!2d-99.24665208218047!3f192.0391934160314!4f-17.077307952642272!5f0.7820865974627469"
-      width="100%"
-      height="300"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin">
-    </iframe>
+                Entrena con disciplina, energía y un entorno diseñado para tu máximo rendimiento.
 
-    <div class="info">
-      <p><strong>Horario:</strong> Lunes a Sábado</p>
-      <p><strong>Contacto:</strong> 777 939 3985</p>
+            </p>
 
-      <a class="btn-primary"
-         href="https://maps.app.goo.gl/WsrpVfbUyEB1KNE17"
-         target="_blank">
-        Abrir en Google Maps
-      </a>
+            <div class="hero-buttons">
 
-      <a class="btn-secondary" id="waFooter">WhatsApp</a>
-    </div>
+                <a href="informacion.html" class="btn-primary">
 
-  </div>
-</section>
+                    Información
 
-<footer>
-  © 2026 Kronox Gym - Todos los derechos reservados
-</footer>
+                </a>
 
-<script src="script.js"></script>
+                <a href="planes.html" class="btn-secondary">
+
+                    Planes
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
