@@ -48,7 +48,7 @@ body {
   font-weight: 600;
 }
 
-/* ================= FIX IMPORTANTE NAV FIJO ================= */
+/* ================= FIX NAV FIJO ================= */
 
 .page {
   padding-top: 100px;
@@ -88,11 +88,15 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ================= LOGO RESPONSIVO (CORREGIDO) ================= */
+
 .hero-logo {
-  width: 140px;
+  width: clamp(180px, 18vw, 340px);
   margin-bottom: 15px;
   filter: drop-shadow(0 0 20px rgba(45,125,255,0.6));
 }
+
+/* ================= TEXTO HERO ================= */
 
 .hero h1 {
   font-size: 3.5rem;
@@ -141,11 +145,7 @@ body {
   margin: auto;
 }
 
-.section h2 {
-  color: #2d7dff;
-  margin-bottom: 20px;
-}
-
+.section h2,
 .section h1 {
   color: #2d7dff;
   margin-bottom: 20px;
