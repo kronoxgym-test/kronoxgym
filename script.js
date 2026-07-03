@@ -7,13 +7,17 @@ function wa(msg) {
 function setLink(id, msg) {
   const el = document.getElementById(id);
   if (el) {
-    el.href = wa(msg);
+    el.setAttribute("href", wa(msg));
   }
 }
 
-// Safe bindings
-setLink("waHero", "Hola, quiero información de Kronox Gym");
-setLink("waMensual", "Hola, me interesa la mensualidad de Kronox Gym ($350)");
-setLink("waAnual", "Hola, me interesa la anualidad de Kronox Gym ($3000)");
-setLink("waFooter", "Hola, quiero información general de Kronox Gym");
-setLink("waNav", "Hola, quiero información de Kronox Gym");
+function initWA() {
+  setLink("waHero", "Hola, quiero información de Kronox Gym");
+  setLink("waMensual", "Hola, me interesa la mensualidad ($350)");
+  setLink("waAnual", "Hola, me interesa la anualidad ($3000)");
+  setLink("waFooter", "Hola, quiero información general");
+  setLink("waNav", "Hola, quiero información de Kronox Gym");
+}
+
+// esperar a que cargue TODO el DOM
+document.addEventListener("DOMContentLoaded", initWA);
