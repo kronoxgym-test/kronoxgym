@@ -19,5 +19,35 @@ function initWA() {
   setLink("waNav", "Hola, quiero información de Kronox Gym");
 }
 
-// esperar a que cargue TODO el DOM
-document.addEventListener("DOMContentLoaded", initWA);
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Links de WhatsApp
+  initWA();
+
+  // ===== Menú responsive =====
+  const menuBtn = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav nav");
+
+  if (menuBtn && nav) {
+
+    menuBtn.addEventListener("click", () => {
+      nav.classList.toggle("active");
+
+      if (nav.classList.contains("active")) {
+        menuBtn.innerHTML = "✕";
+      } else {
+        menuBtn.innerHTML = "☰";
+      }
+    });
+
+    // Cerrar el menú al tocar un enlace
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+        menuBtn.innerHTML = "☰";
+      });
+    });
+
+  }
+
+});
