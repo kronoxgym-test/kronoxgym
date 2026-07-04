@@ -437,3 +437,27 @@ footer {
   }
 
 }
+
+/* ================= IMÁGENES VERTICALES ================= */
+
+.gallery-tall {
+  object-fit: contain !important;
+  background: #070b14;
+}
+
+@media (min-width: 769px) {
+
+  .gallery-tall {
+    object-fit: contain !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .gallery-tall {
+    object-fit: contain !important;
+    height: 320px;
+  }
+
+}
