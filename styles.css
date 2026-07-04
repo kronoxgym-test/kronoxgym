@@ -95,8 +95,8 @@ body {
 }
 
 .hero-logo {
-  width: 280px;          /* El doble de grande */
-  max-width: 100%;       /* Evita que sea enorme en pantallas pequeñas */
+  width: 280px;
+  max-width: 100%;
   height: auto;
   margin-bottom: 15px;
   filter: drop-shadow(0 0 20px rgba(45,125,255,0.6));
@@ -254,30 +254,29 @@ body {
   gap: 28px;
 }
 
-.gallery-item {
+.gallery img {
+  width: 100%;
   height: 280px;
-  background: #070b14;
+  object-fit: cover;
   border-radius: 18px;
   border: 2px solid rgba(45,125,255,0.20);
   box-shadow: 0 0 20px rgba(45,125,255,0.12);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
   cursor: pointer;
 }
 
-.gallery-item:hover {
+.gallery img:hover {
   transform: translateY(-6px) scale(1.03);
   border-color: #2d7dff;
   box-shadow: 0 0 35px rgba(45,125,255,0.35);
 }
 
-.gallery-item img {
-  width: 100%;
-  height: 100%;
+/* ================= FIX SOLO IMÁGENES 2 Y 4 ================= */
+
+.gallery img:nth-child(2),
+.gallery img:nth-child(4) {
   object-fit: contain;
+  background: #070b14;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -290,7 +289,7 @@ body {
     gap: 20px;
   }
 
-  .gallery-item {
+  .gallery img {
     height: 240px;
   }
 
@@ -306,30 +305,30 @@ footer {
 }
 
 .location-card {
-    background: linear-gradient(145deg, #0b1222, #0e1a33);
-    padding: 60px 20px;
-    border-radius: 18px;
-    text-align: center;
-    max-width: 600px;
-    margin: auto;
-    box-shadow: 0 0 25px rgba(45,125,255,0.12);
+  background: linear-gradient(145deg, #0b1222, #0e1a33);
+  padding: 60px 20px;
+  border-radius: 18px;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(45,125,255,0.12);
 }
 
 .location-icon {
-    width: 90px;
-    margin-bottom: 15px;
-    filter: drop-shadow(0 0 12px rgba(45,125,255,0.5));
+  width: 90px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 12px rgba(45,125,255,0.5));
 }
 
 .location-card h2 {
-    color: #2d7dff;
-    margin-bottom: 10px;
+  color: #2d7dff;
+  margin-bottom: 10px;
 }
 
 .location-card p {
-    color: #cbd5e1;
-    margin-bottom: 25px;
-    line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 
 /* ================= MENÚ RESPONSIVE ================= */
@@ -365,23 +364,17 @@ footer {
     top: 100%;
     left: 0;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
     padding: 25px 0;
-
     background: rgba(7,11,20,.98);
     backdrop-filter: blur(18px);
-
     border-top: 1px solid rgba(45,125,255,.25);
-
     transform: translateY(-20px);
     opacity: 0;
     visibility: hidden;
-
     transition: .35s;
   }
 
@@ -395,8 +388,6 @@ footer {
     margin: 0;
     font-size: 1.15rem;
   }
-
-  /* HERO */
 
   .hero {
     padding: 0 20px;
@@ -426,47 +417,8 @@ footer {
     text-align: center;
   }
 
-  /* PLANES */
-
   .plans {
     flex-direction: column;
     align-items: center;
   }
-
-  /* GALERÍA */
-
-  .gallery {
-    width: 92%;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .gallery img {
-    height: 240px;
-  }
-
-}
-
-/* ================= IMÁGENES VERTICALES ================= */
-
-.gallery-tall {
-  object-fit: contain !important;
-  background: #070b14;
-}
-
-@media (min-width: 769px) {
-
-  .gallery-tall {
-    object-fit: contain !important;
-  }
-
-}
-
-@media (max-width: 768px) {
-
-  .gallery-tall {
-    object-fit: contain !important;
-    height: 320px;
-  }
-
 }
