@@ -278,8 +278,6 @@ body {
 .gallery img:nth-child(4) {
   object-fit: contain;
   background: #070b14;
-  height: 280px;
-  padding: 10px;
 }
 
 /* ================= RESPONSIVE ================= */
