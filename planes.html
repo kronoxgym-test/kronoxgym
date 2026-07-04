@@ -7,7 +7,8 @@
 
   <title>Kronox Gym | Planes</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <!-- Se agrega ?v=1.1 para asegurar la recarga del CSS en GitHub Pages -->
+  <link rel="stylesheet" href="styles.css?v=1.1">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
@@ -26,10 +27,10 @@
     <nav id="nav-menu">
 
       <a href="index.html">Inicio</a>
-      <a href="informacion.html">Información</a>
-      <a href="planes.html" class="active">Planes</a>
-      <a href="catalogo.html">Catálogo</a>
-      <a href="ubicacion.html">Ubicación</a>
+      <a href="informacion">Información</a>
+      <a href="planes" class="active">Planes</a>
+      <a href="catalogo">Catálogo</a>
+      <a href="ubicacion">Ubicación</a>
 
       <a href="https://wa.me/527779393985" target="_blank" class="cta-nav">
         WhatsApp
@@ -75,10 +76,10 @@
           <li>Acceso total</li>
           <li>Pesas y cardio</li>
           <li>Horario libre</li>
-
         </ul>
 
-        <a href="https://wa.me/527779393985" class="btn-primary">Elegir</a>
+        <!-- Se añade el ID para conectar con el mensaje personalizado de script.js -->
+        <a href="https://wa.me/527779393985" id="waMensual" class="btn-primary">Elegir</a>
       </div>
 
       <div class="plan-card">
@@ -91,7 +92,8 @@
           <li>Horario libre</li>
         </ul>
 
-        <a href="https://wa.me/527779393985" class="btn-primary">Elegir</a>
+        <!-- Se añade el ID para conectar con el mensaje personalizado de script.js -->
+        <a href="https://wa.me/527779393985" id="waAnual" class="btn-primary">Elegir</a>
       </div>
 
     </section>
