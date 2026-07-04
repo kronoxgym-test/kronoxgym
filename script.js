@@ -1,3 +1,11 @@
+// ================= REGLA PARA LIMPIAR LA URL (.HTML) =================
+// Si la URL contiene .html, lo remueve de la barra de direcciones estéticamente
+if (window.location.pathname.endsWith('.html')) {
+  const cleanUrl = window.location.pathname.replace(/\.html$/, '') + window.location.search + window.location.hash;
+  window.history.replaceState(null, '', cleanUrl);
+}
+
+// ================= CONFIGURACIÓN DE WHATSAPP =================
 const phone = "527779393985";
 
 function wa(msg) {
@@ -19,6 +27,7 @@ function initWA() {
   setLink("waNav", "Hola, quiero información de Kronox Gym");
 }
 
+// ================= INICIALIZACIÓN DEL SITIO =================
 document.addEventListener("DOMContentLoaded", () => {
 
   // Links de WhatsApp
