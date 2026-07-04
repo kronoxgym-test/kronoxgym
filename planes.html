@@ -2,125 +2,101 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kronox Gym | Planes</title>
+  <title>Kronox Gym | Planes</title>
 
-    <link rel="stylesheet" href="styles.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body class="planes">
 
-    <!-- ================= NAVBAR ================= -->
+  <!-- ================= NAV ================= -->
 
-    <header class="nav">
+  <header class="nav">
 
-        <a href="index.html" class="logo">
-            <img src="https://res.cloudinary.com/bo5jzelh/image/upload/v1783041430/Logo_Kronox_Gym_lfg9tl.jpg" alt="Kronox Gym">
-        </a>
+    <a href="index.html" class="logo">
+      <img src="https://res.cloudinary.com/bo5jzelh/image/upload/v1783041430/Logo_Kronox_Gym_lfg9tl.jpg" alt="Kronox Gym">
+    </a>
 
-        <!-- Botón menú móvil -->
-        <button class="menu-toggle" id="menu-toggle">
-            ☰
-        </button>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
 
-        <nav id="nav-menu">
+    <nav id="nav-menu">
 
-            <a href="index.html">Inicio</a>
-            <a href="informacion.html">Información</a>
-            <a href="planes.html" class="active">Planes</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="ubicacion.html">Ubicación</a>
+      <a href="index.html">Inicio</a>
+      <a href="informacion.html">Información</a>
+      <a href="planes.html" class="active">Planes</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="ubicacion.html">Ubicación</a>
 
-            <a href="https://wa.me/527779393985"
-               target="_blank"
-               class="cta-nav">
-                WhatsApp
-            </a>
+      <a href="https://wa.me/527779393985" target="_blank" class="cta-nav">
+        WhatsApp
+      </a>
 
-        </nav>
+    </nav>
+  </header>
 
-    </header>
+  <!-- ================= CONTENIDO ================= -->
 
-    <!-- ================= CONTENIDO ================= -->
+  <main class="page">
 
-    <main class="page">
+    <section class="section">
 
-        <section class="section">
+      <h1>Planes</h1>
+      <p>Elige el plan que mejor se adapte a ti</p>
 
-            <h1>PLANES</h1>
+    </section>
 
-        </section>
+    <!-- ================= TARJETAS ================= -->
 
-        <section class="section">
+    <section class="plans">
 
-            <div class="plans">
+      <div class="plan-card">
+        <h3>Básico</h3>
+        <p>$300 / mes</p>
 
-                <!-- VISITA -->
-                <div class="plan-card">
+        <ul>
+          <li>Acceso general</li>
+          <li>Pesas y cardio</li>
+          <li>Horario libre</li>
+        </ul>
 
-                    <h3>$100</h3>
-                    <p>VISITA</p>
+        <a href="https://wa.me/527779393985" class="btn-primary">Elegir</a>
+      </div>
 
-                    <ul>
-                        <li>Acceso por un día</li>
-                        <li>Entrenamiento libre</li>
-                        <li>Uso de instalaciones</li>
-                    </ul>
+      <div class="plan-card highlight">
+        <h3>Pro</h3>
+        <p>$450 / mes</p>
 
-                    <a href="https://wa.me/527779393985" class="btn-primary">
-                        Cotizar
-                    </a>
+        <ul>
+          <li>Acceso total</li>
+          <li>Área funcional</li>
+          <li>Rutina incluida</li>
+        </ul>
 
-                </div>
+        <a href="https://wa.me/527779393985" class="btn-primary">Elegir</a>
+      </div>
 
-                <!-- MENSUALIDAD -->
-                <div class="plan-card highlight">
+      <div class="plan-card">
+        <h3>Premium</h3>
+        <p>$600 / mes</p>
 
-                    <h3>$350</h3>
-                    <p>MENSUALIDAD</p>
+        <ul>
+          <li>Entrenador básico</li>
+          <li>Rutina personalizada</li>
+          <li>Acceso total</li>
+        </ul>
 
-                    <ul>
-                        <li>Acceso ilimitado al gimnasio</li>
-                        <li>Área de pesas y cardio</li>
-                        <li>Entrenamiento libre</li>
-                    </ul>
+        <a href="https://wa.me/527779393985" class="btn-primary">Elegir</a>
+      </div>
 
-                    <a href="https://wa.me/527779393985" class="btn-primary">
-                        Cotizar
-                    </a>
+    </section>
 
-                </div>
+  </main>
 
-                <!-- ANUALIDAD -->
-                <div class="plan-card highlight">
-
-                    <h3>$3000</h3>
-                    <p>ANUALIDAD</p>
-
-                    <ul>
-                        <li>Acceso todo el año</li>
-                        <li>Ahorro completo</li>
-                        <li>Entrena sin límites</li>
-                    </ul>
-
-                    <a href="https://wa.me/527779393985" class="btn-primary">
-                        Cotizar
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
-
 </html>
