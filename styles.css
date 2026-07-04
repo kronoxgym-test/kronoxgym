@@ -422,3 +422,50 @@ footer {
     align-items: center;
   }
 }
+
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* ================= FONDO GENERAL BASE ================= */
+.page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.25);
+  z-index: -2;
+}
+
+.page::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(7,11,20,0.85), rgba(7,11,20,0.95));
+  z-index: -1;
+}
+
+/* ================= FONDOS DIFERENTES POR PÁGINA ================= */
+
+/* INFORMACIÓN */
+body.informacion .page::before {
+  background: url("https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=2000&q=80");
+}
+
+/* PLANES */
+body.planes .page::before {
+  background: url("https://images.unsplash.com/photo-1554344728-77cf90d9ed26?auto=format&fit=crop&w=2000&q=80");
+}
+
+/* UBICACIÓN */
+body.ubicacion .page::before {
+  background: url("https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=2000&q=80");
+}
