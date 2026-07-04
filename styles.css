@@ -400,8 +400,7 @@ footer {
 
 /* Fondo para la sección de Información */
 .bg-informacion {
-  background: linear-gradient(180deg, rgba(7,11,20,0.4) 0%, rgba(7,11,20,0.85) 100%), 
-              url("https://res.cloudinary.com/bo5jzelh/image/upload/v1783188427/Gemini_Generated_Image_g0cmr5g0cmr5g0cm_ivjxrh.png");
+  background: linear-gradient(180deg, rgba(7,11,20,0.4) 0%, rgba(7,11,20,0.85) 100%), url("https://res.cloudinary.com/bo5jzelh/image/upload/v1783188427/Gemini_Generated_Image_g0cmr5g0cmr5g0cm_ivjxrh.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -412,8 +411,7 @@ footer {
 
 /* Fondo para la sección de Planes */
 .bg-planes {
-  background: linear-gradient(180deg, rgba(7,11,20,0.4) 0%, rgba(7,11,20,0.85) 100%), 
-              url("https://res.cloudinary.com/bo5jzelh/image/upload/v1783188259/625cfdb34d5735b6298fd53c66eafbbc_al43tx.jpg");
+  background: linear-gradient(180deg, rgba(7,11,20,0.4) 0%, rgba(7,11,20,0.85) 100%), url("https://res.cloudinary.com/bo5jzelh/image/upload/v1783188259/625cfdb34d5735b6298fd53c66eafbbc_al43tx.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
