@@ -1,10 +1,10 @@
 // ================= REGLA PARA LIMPIAR LA URL (INDEX Y .HTML) =================
-// 1. Si entra a la raíz o a index, limpia la barra para que no muestre "index" ni ".html"
-if (window.location.pathname === '/' || window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('index')) {
-  const cleanUrl = window.location.origin + '/' + window.location.search + window.location.hash;
+// 1. Si la URL termina en index.html, lo remueve por completo de la barra
+if (window.location.pathname.endsWith('index.html')) {
+  const cleanUrl = window.location.pathname.replace(/index\.html$/, '') + window.location.search + window.location.hash;
   window.history.replaceState(null, '', cleanUrl);
 } 
-// 2. Para el resto de las páginas (información, planes, etc.), remueve el .html de forma estética
+// 2. Para las demás páginas, remueve el .html visualmente apenas carga la página
 else if (window.location.pathname.endsWith('.html')) {
   const cleanUrl = window.location.pathname.replace(/\.html$/, '') + window.location.search + window.location.hash;
   window.history.replaceState(null, '', cleanUrl);
