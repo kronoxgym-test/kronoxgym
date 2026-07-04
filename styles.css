@@ -276,8 +276,8 @@ body {
 /* FIX REAL (evita recorte feo en contain) */
 .gallery img:nth-child(2),
 .gallery img:nth-child(4) {
-  object-fit: contain;
-  background: #070b14;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* ================= RESPONSIVE ================= */
