@@ -1,6 +1,11 @@
-// ================= REGLA PARA LIMPIAR LA URL (.HTML) =================
-// Si la URL contiene .html, lo remueve de la barra de direcciones estéticamente
-if (window.location.pathname.endsWith('.html')) {
+// ================= REGLA PARA LIMPIAR LA URL (INDEX Y .HTML) =================
+// 1. Si entra a la raíz o a index, limpia la barra para que no muestre "index" ni ".html"
+if (window.location.pathname === '/' || window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('index')) {
+  const cleanUrl = window.location.origin + '/' + window.location.search + window.location.hash;
+  window.history.replaceState(null, '', cleanUrl);
+} 
+// 2. Para el resto de las páginas (información, planes, etc.), remueve el .html de forma estética
+else if (window.location.pathname.endsWith('.html')) {
   const cleanUrl = window.location.pathname.replace(/\.html$/, '') + window.location.search + window.location.hash;
   window.history.replaceState(null, '', cleanUrl);
 }
